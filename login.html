@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Login - Welcome Back</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 h-screen w-screen overflow-hidden m-0 p-0 flex items-center justify-center">
+    <!-- Outer wrapper strictly locked to screen bounds -->
+    <div class="w-full h-full max-h-screen flex items-center justify-center p-4">
+        <!-- Tightened card layouts to ensure zero overflow -->
+        <div class="w-full max-w-sm bg-blue-50 rounded-2xl shadow-xl p-6 text-center flex flex-col justify-between">
+            <div>
+                <!-- Icon -->
+                <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mx-auto shadow-sm mb-3">
+                    <img src="shield copy.png" alt="emoji" class="object-contain w-8 h-8">
+                </div>
+                <!-- Headings -->
+                <h2 class="text-xl font-extrabold text-black tracking-tight">Welcome Back</h2>
+                <p class="text-gray-500 text-xs mt-1 font-medium">Enter your credentials to access your account</p>
+            </div>
+            <form class="w-full text-left space-y-3 mt-4">
+                <!-- Email Address Input -->
+                <div class="w-full space-y-1">
+                    <label class="text-xs font-bold text-gray-500 tracking-wide">Email Address</label>
+                    <input type="email" required placeholder="name@company.com" class="w-full bg-white text-gray-700 placeholder-gray-400 rounded-xl py-2.5 px-4 border border-transparent text-sm transition focus:outline-none focus:border-blue-800">
+                </div>
+                <!-- Password Input -->
+                <div class="w-full space-y-1">
+                    <label class="text-xs font-bold text-gray-500 tracking-wide">Password</label>
+                    <input type="password" required placeholder="••••••••" class="w-full bg-white text-gray-700 rounded-xl py-2.5 px-4 text-sm tracking-widest transition focus:outline-none focus:border-blue-800">
+                </div>
+                <!-- Remember Me & Forgot Password Layout -->
+                <div class="w-full flex items-center justify-between text-xs pt-0.5">
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="remember"
+                            class="rounded border-gray-300 text-blue-800 focus:ring-blue-700 w-4 h-4 cursor-pointer">
+                        <label for="remember" class="text-gray-500 font-semibold cursor-pointer">Remember me</label>
+                    </div>
+                    <a href="#" class="text-blue-800 font-bold hover:underline">Forgot password?</a>
+                </div>
+                <!-- Log In Submit Button -->
+                <button type="submit"
+                    class="w-full bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 rounded-xl shadow-md transition flex items-center justify-center space-x-2 text-sm mt-1">
+                    <span>Log In</span>
+                </button>
+            </form>
+            <!-- Footer Call-to-action Text -->
+            <p class="text-xs text-gray-500 mt-5 font-medium">Don't have an account yet?
+                <a href="#" class="text-blue-800 font-bold underline hover:text-blue-900">Sign up for free</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
