@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuietMind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="flex flex-col lg:flex-row min-h-screen">
+        <div class="w-full lg:w-72 bg-white border-r border-[#e4e3dc] lg:sticky top-0 lg:h-screen flex flex-col justify-between">
+            <div>
+                <div class="flex items-center gap-3 px-6 pt-6 mb-10">
+                    <div class="w-12 h-12 rounded-2xl bg-[#74855f] flex items-center justify-center">
+                        <img src="./image.folder/leaf.png" class="w-5 h-5 object-contain">
+                    </div>
+                    <div class="">
+                        <h1 class="text-2xl font-bold text-[#3d4a35]">QuietMind</h1>
+                        <p class="text-sm text-[#7b886c]">Beginner's Haven</p>
+                    </div>
+                </div>
+                <div class="px-5 mb-4">
+                    <button class="w-full bg-[#74855f] rounded-2xl py-4 flex items-center justify-center gap-3 text-white">
+                        <span class="text-xl">+</span>
+                        <p class="text-lg font-semibold">New Note</p>
+                    </button>
+                </div>
+                <div class="px-5 mb-3">
+                    <p class="uppercase tracking-widest text-xs font-bold text-[#9ca28f] mb-5">Library</p>
+                    <div class="bg-[#e4e5df] rounded-2xl px-4 py-1 flex items-center gap-1 border-l-4 border-[#74855f] mb-3">
+                        <img src="./image.folder/note.png" class="w-5 h-5 object-contain">
+                        <p class="text-[#5d6a51] font-semibold">Notes</p>
+                    </div>
+                    <div class="px-4 py-1 flex items-center gap-x-2">
+                        <img src="./image.folder/folder.png" class="w-5 h-5 object-contain">
+                        <p class="text-[#6f7b61] font-semibold">Categories</p>
+                    </div>
+                </div>
+                <div class="px-6">
+                    <p class="uppercase tracking-widest text-xs font-bold text-[#9ca28f] mb-5">Favorites</p>
+
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-2 h-2 rounded-full bg-[#93a07e]"></span>
+                        <p class="text-[#6f7b61]">Personal</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-2 h-2 rounded-full bg-[#c8b99d]"></span>
+                        <p class="text-[#6f7b61]">Creative Work</p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 pb-8">
+                <div class="border-t border-[#e1dfd9] mb-6"></div>
+                <div class="space-y-5">
+                    <div class="flex items-center gap-4">
+                        <img src="./image.folder/settings.png" class="w-5 h-5 object-contain">
+                        <p class="text-[#6f7b61] font-medium">Settings</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="./image.folder/archive.png" class="w-5 h-5 object-contain">
+                        <p class="text-[#6f7b61] font-medium">Archive</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="./image.folder/help.png" class="w-5 h-5 object-contain">
+                        <p class="text-[#6f7b61] font-medium">Help</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="sticky top-0 z-50 bg-[#f8f7f4] border-b border-[#e5e4dd] px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div class="w-full max-w-2xl border border-[#d8d7d0] rounded-full px-5 py-3 flex items-center gap-3 bg-white">
+                    <img src="./image.folder/lens.png" class="w-4 h-4 object-contain">
+                    <p class="text-[#9aa78b] text-sm sm:text-base">Search your thoughts...</p>
+                </div>
+
+                <div class="flex items-center justify-between sm:justify-end gap-6">
+                    <div class="flex items-center gap-2 text-[#70825d]">
+                        <span class="text-xl">+</span>
+                        <p class="font-semibold text-sm sm:text-base">New Note</p>
+                    </div>
+                    <div class="w-10 h-10 rounded-full overflow-hidden bg-[#e6e3d8]">
+                        <img src="./image.folder/user.png" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 sm:p-6 lg:p-8 bg-[#f7f6f2]">
+                <div class="flex flex-col xl:flex-row xl:items-start xl:justify-between gap-6 mb-8">
+                    <div>
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#3d4a35] mb-2">Good afternoon, Julian.</h1>
+
+                        <p class="text-base sm:text-lg text-[#7b886c]">
+                            Take a breath. What's on your mind today?
+                        </p>
+
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button class="bg-white border border-[#ddddda] rounded-full px-5 py-3 flex items-center  gap-2">
+                            <span class="text-sm text-[#70825d]">◔</span>
+                            <p class="text-sm font-semibold text-[#70825d]">Recent</p>
+                        </button>
+
+                        <button class="bg-[#70825d] rounded-full px-5 py-3 flex items-center gap-2 text-white">
+                            <span class="text-sm">⊞</span>
+                            <p class="text-sm font-semibold">Layout</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-5 mb-5">
+                    <div class="xl:col-span-2 bg-white rounded-3xl p-6 shadow-sm">
+                        <div class="flex items-center justify-between mb-8">
+                            <div class="flex items-center gap-3 flex-wrap">
+                                <span class="bg-[#819267] text-white text-xs font-bold px-4 py-2 rounded-full">
+                                    CREATIVE WORK
+                                </span>
+                                <p class="text-sm text-[#a1a58f]">
+                                    • 2 hours ago
+                                </p>
+                            </div>
+                            <div class="w-14 h-14 rounded-full bg-[#efede8]"></div>
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#3d4a35] leading-tight mb-5">
+                            The Philosophy of Quiet Productivity
+                        </h1>
+                        <p class="text-base sm:text-lg leading-relaxed text-[#738261] mb-8">
+                            In a world that never stops shouting,
+                            there is a profound power in finding silence.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-3xl p-6 shadow-sm">
+                        <h1 class="text-2xl sm:text-3xl font-bold text-[#414d39] mb-6">
+                            Morning Ritual Ideas
+                        </h1>
+                        <div class="space-y-4 text-[#738261]">
+                            <p>• Cold water therapy</p>
+                            <p>• Focused breathing</p>
+                            <p>• Tea ceremony</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm">
+                        <div class="h-56 bg-[#d8d8c8]">
+                            <img src="./image.folder/office copy.png" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h1 class="text-2xl font-bold text-[#3d4a35] mb-4">Office Redesign Notes</h1>
+                            <p class="text-[#738261] leading-relaxed">
+                                Need to prioritize ergonomic comfort.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl p-6 shadow-sm">
+                        <h1 class="text-2xl sm:text-3xl font-bold text-[#414d39] mb-6">Weekend Grocery List</h1>
+                        <div class="space-y-4 text-[#738261]">
+                            <p>• Fresh ginger</p>
+                            <p>• Organic honey</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl p-6 shadow-sm">
+                        <h1 class="text-2xl sm:text-3xl font-bold text-[#414d39] mb-5">Project Alpha Review</h1>
+                        <p class="text-[#738261] leading-relaxed">Positive feedback regarding the UI system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
